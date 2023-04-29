@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DataTables.js</title>
+        <!-- Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+        <!-- DataTable -->
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" />
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <table id="datatable_users" class="table table-striped">
+                        <thead>
+                            <tr>
+                              <th class="table__column--p">Nombre</th>
+                              <th class="table__column--g">Descripcion</th>
+                              <th class="table__column--g">Precio</th>
+                              <th class="table__column--m table__align--right">
+                                <a
+                                  href="./formularioCompra.html"
+                                  class="simple-button simple-button--add"
+                                  >Nuevo Cliente</a
+                                >
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody data-table>
+                   
+                          </tbody>
+                        <tbody id="tableBody_users"></tbody>
+                    </table>
+                    <div class="modal-container modal--close">
+                        <article class="modal">
+                          <h2 class="modal__title">Eliminar</h2>
+                          <button class="modal__close">X</button>
+                          <p class="modal__text">¿Deseas continuar?</p>
+                          <div class="modal__button-container">
+                            <button class="modal__button modal__button--confirm">
+                              Eliminar
+                            </button>
+                            <button class="modal__button">No eliminar</button>
+                          </div>
+                        </article>
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Custom JS -->
+        <script type ="module" src="/controllers/client.controller.js"></script>
+    </body>
+</html>

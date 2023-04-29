@@ -1,0 +1,10 @@
+.tajeta-gemelos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenidoPrincipal-cursos-link{
+   
+    width: 25%;
+}
+      

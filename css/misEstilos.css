@@ -1,0 +1,28 @@
+.logo{
+    width: 6%;
+    height: 6%;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+
+
+
+
+.text-center{
+    text-align: center;
+    font-family: 'Charmonman', cursive;
+}
+
+.tajeta-contenido{
+    display: flex;
+    
+    
+}
+
+.card{
+    
+    margin-right: 2%;
+    margin-left: 2%;
+    
+}
